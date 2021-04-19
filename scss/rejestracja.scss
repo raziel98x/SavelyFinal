@@ -1,0 +1,71 @@
+@import 'colors';
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+html{
+    font-family: sans-serif;
+}
+
+header{
+    width:100%;
+    height: 100vh;
+    background-color: $bg-color;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Roboto;
+}
+
+.block{
+    text-align:center;
+    height: 550px;
+    width: 495px;
+    background-color: $bg-color;
+    box-shadow: 0px 0px 15px black;
+
+    h1{
+        padding:60px;
+        font-size: 36px;
+        color:$main_color;
+        text-transform: uppercase;
+    }
+
+    input{
+        width:90%;
+        padding:10px;
+        margin:20px 0px;
+        background: transparent;
+        border: 2px solid $main_color;
+        outline:none;
+        color:$main_color;
+    }
+    .fas{
+        position: relative;
+color:#f9aa3373;
+margin:0px;
+padding:0;
+border:none;
+top:5px;
+left:-40px;
+font-size:26px;
+    }
+    .btn{
+        display:flex;
+        flex-direction: column;
+        justify-content: center;align-items: center;
+    }
+    button{
+        border-radius: 10px;
+        background-color: $main_color;
+        width: 190px;
+        height: 36px;
+        border:none;
+        margin:10px;
+        
+    }
+  
+
+}

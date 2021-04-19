@@ -1,0 +1,395 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  text-decoration: none;
+}
+
+body {
+  background-color: #F9AA33;
+}
+
+.container {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+          transform: translateX(-50%) translateY(-50%);
+  background-color: #F9AA33;
+}
+
+.container .app-title {
+  margin-top: 45px;
+  margin-left: 20px;
+  text-align: center;
+}
+
+.container .app-title a {
+  color: white;
+}
+
+.header .balance {
+  margin-top: 45px;
+  margin-left: 20px;
+  text-align: center;
+  /*Napis pod Bilans*/
+}
+
+.header .balance .title {
+  color: #344955;
+  font-size: 50px;
+  font-family: 'Gilroy Bold';
+}
+
+.header .balance .value {
+  color: #344955;
+  font-size: 28px;
+  margin-top: 10px;
+}
+
+.header .account {
+  display: block;
+  width: 310px;
+  margin: 35px auto 0;
+  line-height: 1.7em;
+  text-align: center;
+}
+
+.header .account .income, .header .account .chart, .header .account .outcome {
+  height: 50%;
+  display: inline-block;
+  width: 100px;
+  vertical-align: middle;
+}
+
+.header .account .income .title {
+  color: #344955;
+  opacity: 0.5;
+}
+
+.header .account .income .income-total {
+  color: #344955;
+}
+
+.header .account .outcome .title {
+  color: #344955;
+  opacity: 0.5;
+}
+
+.header .account .outcome .outcome-total {
+  color: #A62C2C;
+}
+
+/*/////////////   DASHBOARD    /////////////*/
+.dashboard {
+  display: block;
+  text-align: center;
+  width: 100%;
+  height: 100vh;
+  background-color: #344955;
+  margin-top: 35px;
+  border-radius: 60px 60px 0 0;
+  /* ////////// PORÓWNANIE ///////////// */
+  /* //////// EXPENSE ////////// */
+  /* /////// INCOME //////// */
+}
+
+.dashboard .dash-title {
+  display: inline-block;
+  color: #F9AA33;
+  font-size: 50px;
+  margin-left: 20px;
+  margin-top: 30px;
+}
+
+.dashboard input {
+  /* MAKE INPUT SELECTABLE */
+  -webkit-user-select: auto;
+     -moz-user-select: auto;
+      -ms-user-select: auto;
+          user-select: auto;
+}
+
+.dashboard #all {
+  text-align: center;
+  width: 360px;
+  height: 339px;
+  position: relative;
+}
+
+.dashboard #all ul {
+  text-align: center;
+  width: 360px;
+  height: 285px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  margin-top: 20px;
+  overflow-x: auto;
+}
+
+.dashboard #all ul .list li {
+  position: relative;
+  font-size: 16px;
+}
+
+.dashboard #all ul .list li * {
+  display: inline-block;
+  height: 30px;
+  vertical-align: middle;
+}
+
+.dashboard #all ul .list li .entry {
+  width: 250px;
+  height: auto;
+  padding-left: 20px;
+  margin-bottom: 10px;
+  word-wrap: break-word;
+}
+
+.dashboard #all ul .list li #edit {
+  visibility: hidden;
+}
+
+.dashboard #all ul .list li #delete {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  right: 20px;
+  cursor: pointer;
+  background-image: url("img/trash.png");
+  background-size: 20px 20px;
+  background-repeat: no-repeat;
+}
+
+.dashboard #all ul .list li .expense {
+  color: #f0624d;
+}
+
+.dashboard #expense {
+  width: 360px;
+  height: 339px;
+  position: relative;
+}
+
+.dashboard #expense .input {
+  position: absolute;
+  display: block;
+  width: 360px;
+  bottom: 0;
+  border-top: 1px solid #F9AA33;
+}
+
+.dashboard #expense .input * {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.dashboard #expense .input input#expense-title-input {
+  height: 40px;
+  width: 150px;
+  padding-left: 10px;
+  font-size: 18px;
+  margin: 5px;
+  margin-left: 10px;
+  border-radius: 10px 0 0 10px;
+  border: none;
+}
+
+.dashboard #expense .input input#expense-amount-input {
+  height: 40px;
+  width: 110px;
+  padding-left: 10px;
+  font-size: 18px;
+  margin: 5px;
+  margin-left: -10px;
+  border-radius: 0 10px 10px 0;
+  border: none;
+}
+
+.dashboard #expense .input .add-expense img {
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+}
+
+.dashboard #expense ul {
+  width: 360px;
+  height: 285px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  margin-top: 20px;
+  overflow-x: auto;
+}
+
+.dashboard #expense ul .list li {
+  position: relative;
+  font-size: 18px;
+}
+
+.dashboard #expense ul .list li * {
+  display: inline-block;
+  height: 30px;
+  vertical-align: middle;
+}
+
+.dashboard #expense ul .list li .entry {
+  width: 250px;
+  height: auto;
+  padding-left: 20px;
+  margin-bottom: 10px;
+  word-wrap: break-word;
+  color: #f0624d;
+}
+
+.dashboard #expense ul .list li #edit {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  right: 50px;
+  cursor: pointer;
+  background-image: url("img/edit.png");
+  background-size: 20px 20px;
+  background-repeat: no-repeat;
+}
+
+.dashboard #expense ul .list li #delete {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  right: 20px;
+  cursor: pointer;
+  background-image: url("img/trash.png");
+  background-size: 20px 20px;
+  background-repeat: no-repeat;
+}
+
+.dashboard #income {
+  width: 360px;
+  height: 339px;
+  position: relative;
+}
+
+.dashboard #income .input {
+  position: absolute;
+  display: block;
+  width: 360px;
+  bottom: 0;
+  border-top: 1px solid #ccc;
+}
+
+.dashboard #income .input * {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.dashboard #income .input input#income-title-input {
+  height: 40px;
+  width: 150px;
+  padding-left: 10px;
+  font-size: 16px;
+  margin: 5px;
+  margin-left: 10px;
+  border-radius: 10px 0 0 10px;
+  border: none;
+}
+
+.dashboard #income .input input#income-amount-input {
+  height: 40px;
+  width: 110px;
+  padding-left: 10px;
+  font-size: 16px;
+  margin: 5px;
+  margin-left: -10px;
+  border-radius: 0 10px 10px 0;
+  border: none;
+}
+
+.dashboard #income .input .add-income img {
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+}
+
+.dashboard #income ul {
+  width: 360px;
+  height: 285px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  margin-top: 20px;
+  overflow-x: auto;
+}
+
+.dashboard #income ul .list li {
+  position: relative;
+  font-size: 16px;
+}
+
+.dashboard #income ul .list li * {
+  display: inline-block;
+  height: 30px;
+  vertical-align: middle;
+}
+
+.dashboard #income ul .list li .entry {
+  width: 250px;
+  height: auto;
+  padding-left: 20px;
+  margin-bottom: 10px;
+  word-wrap: break-word;
+}
+
+.dashboard #income ul .list li #edit {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  right: 50px;
+  cursor: pointer;
+  background-image: url("img/edit.png");
+  background-size: 20px 20px;
+  background-repeat: no-repeat;
+}
+
+.dashboard #income ul .list li #delete {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  right: 20px;
+  cursor: pointer;
+  background-image: url("icon/trash.png");
+  background-size: 20px 20px;
+  background-repeat: no-repeat;
+}
+
+.toggle {
+  display: block;
+  margin-top: 30px;
+  margin-left: 20px;
+}
+
+.toggle .tab1, .toggle .tab2, .toggle .tab3 {
+  display: inline-block;
+  cursor: pointer;
+  font-size: 18px;
+  color: #F9AA33;
+  opacity: 0.8;
+}
+
+.toggle .tab2, .toggle .tab3 {
+  margin-left: 10px;
+}
+
+.active {
+  opacity: 1;
+}
+
+.hide {
+  display: none;
+}
+/*# sourceMappingURL=style.css.map */

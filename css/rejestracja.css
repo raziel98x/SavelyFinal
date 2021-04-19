@@ -1,0 +1,89 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  font-family: sans-serif;
+}
+
+header {
+  width: 100%;
+  height: 100vh;
+  background-color: #344955;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: Roboto;
+}
+
+.block {
+  text-align: center;
+  height: 550px;
+  width: 495px;
+  background-color: #344955;
+  -webkit-box-shadow: 0px 0px 15px black;
+          box-shadow: 0px 0px 15px black;
+}
+
+.block h1 {
+  padding: 60px;
+  font-size: 36px;
+  color: #F9AA33;
+  text-transform: uppercase;
+}
+
+.block input {
+  width: 90%;
+  padding: 10px;
+  margin: 20px 0px;
+  background: transparent;
+  border: 2px solid #F9AA33;
+  outline: none;
+  color: #F9AA33;
+}
+
+.block .fas {
+  position: relative;
+  color: #f9aa3373;
+  margin: 0px;
+  padding: 0;
+  border: none;
+  top: 5px;
+  left: -40px;
+  font-size: 26px;
+}
+
+.block .btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.block button {
+  border-radius: 10px;
+  background-color: #F9AA33;
+  width: 190px;
+  height: 36px;
+  border: none;
+  margin: 10px;
+}
+/*# sourceMappingURL=rejestracja.css.map */
